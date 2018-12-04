@@ -3,6 +3,13 @@ body {
     color: #fff;
 }
 
+section {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ----------------- HEADER ------------------ */
 
 header {
@@ -45,21 +52,19 @@ nav {
     display: none;
 }
 
+/*********************************************/
 /* ----------------- HOME ------------------ */
+/*********************************************/
 
 .home {
-    height: 100vh;
     background: url('../img/kosmos-min.jpg') top center;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+    
 }
 .home__block {
     text-align: center;
     background: rgba(0, 0, 0, 0.4);
     padding: 0 10px 10px;
 }
-
 .home__block h1 {
     color: #999999;
     font-size: 44px;
@@ -68,17 +73,88 @@ nav {
     letter-spacing: -2.2px;
     margin-bottom: 20px;
 }
-
 .home__block h1 span {
     color: #fcac45;
     font-weight: 700;
 }
-
 .home__block p {
     font-size: 20px;
     letter-spacing: -1px;
 }
-
 .home__block p span {
     font-weight: 700;
+}
+
+/*********************************************/
+/* ----------------- HOME ------------------ */
+/*********************************************/
+
+.about {
+    background: rgba(0, 0, 0, 0.1);
+    background-image: url(../img/about-bg.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+
+.about__block {
+    display: flex;
+    grid-gap: 60px;
+}
+
+.about__img {
+    grid-area: img;
+    margin-right: 18.8%;
+}
+
+.about__content {
+    grid-area: content;
+    min-width: 402px;
+    max-width: 405px;
+}
+
+.about__content h1 {
+    color: #222222;
+    font-size: 34px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #fcac45;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.about__content h1 span {
+    font-weight: 700;
+    letter-spacing: -0.68px;
+}
+
+.about__content p {
+    color: #6c6c6c;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.72px;
+    margin-bottom: 45px;
+}
+
+.about__content_list {
+    padding-left: 25px;
+    color: #5a5a5a;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: -0.18px;
+}
+
+.about__content_list li {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.about__content_list li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    
+}
+
+.about__content_list span {
+    font-weight: 600;
+    font-style: normal;
 }
