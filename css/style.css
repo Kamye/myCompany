@@ -15,6 +15,10 @@ body {
     justify-content: center;
 }
 
+.container {
+    width: 1124px;
+    margin: 0 auto;
+}
 /* ----------------- HEADER ------------------ */
 
 header {
@@ -68,7 +72,7 @@ nav {
 
 .home {
     background: url('../img/kosmos-min.jpg') top center;
-    
+    background-size: cover;
 }
 .home__block {
     text-align: center;
@@ -173,4 +177,73 @@ nav {
 .about__content_list span {
     font-weight: 600;
     font-style: normal;
+}
+
+/*********************************************/
+/* ----------------- TEAM ------------------ */
+/*********************************************/
+
+.team {
+    padding: 100px 0 165px;
+    background-image: linear-gradient(to top, rgba(94, 91, 91, 0.541), rgba(94, 91, 91, 0.541)), url(../img/team-bg.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+.team__name {
+    font-size: 44px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 30px;
+    margin-bottom: 105px;
+    position: relative;
+}
+
+.team__name::after {
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: #fcac45;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 50px);
+}
+
+.team__person {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+}
+
+.person__item {
+    padding: 20px 10px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.person__item_photo {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-bottom: 22px;
+    background: #494949;
+}
+
+.person__item_name{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.person__item_function {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.person__item_about {
+    font-size: 14px;
+    line-height: 24px;
+
 }
