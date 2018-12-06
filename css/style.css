@@ -259,12 +259,10 @@ nav {
     background-size: cover;
     text-align: center;
 }
-
 .services__name {
     margin-bottom: 55px;
     color: #222222;
 }
-
 .services__description {
     color: #6c6c6c;
     font-size: 16px;
@@ -273,16 +271,10 @@ nav {
     margin-bottom: 100px;
     background: rgba(255, 255, 255, 0.6);
 }
-
-.services__block {
-
-}
-
 .services__item {
     color: #222222;
     background: rgba(255, 255, 255, 0.6);
 }
-
 .services__item_photo {
     margin: 0 auto;
     width: 125px;
@@ -292,15 +284,44 @@ nav {
     border: 6px solid #fcac45;
     margin-bottom: 30px;
 }
-
 .services__item_name {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 20px;
 }
-
 .services__item_about {
     font-size: 14px;
     line-height: 21px;
 }
+
+/*********************************************/
+/* ----------------- CLIENTS ------------------ */
+/*********************************************/
+
+.clients {
+    background-color: #000000;
+    padding: 100px 0 210px;
+}
+
+.clients__name {
+    margin-bottom: 110px;
+}
+
+.clients__name span {
+    font-weight: 300;
+}
+
+.clients__block {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 31px;
+}
+
+.clients__block_item img {
+    display: block;
+}
+
+/* .clients__block_item:nth-child(n + 4) {
+    display: none;
+} */
