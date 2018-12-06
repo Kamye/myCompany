@@ -1,4 +1,8 @@
 @media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+
     .header__logo {
         margin-left: 5%;
     }
@@ -13,9 +17,20 @@
     .about__img {
         margin-right: 10px;
     }
+
+    .team {
+        padding: 60px 0;
+    }
 }
 
 @media (max-width: 992px) {
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
     header {
         position: absolute;
         background-color: #000;
@@ -85,6 +100,14 @@
     .about__content p {
         margin-bottom: 45px;
     }
+
+    .team__person {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .team__name {
+        margin-bottom: 60px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -114,5 +137,9 @@
 
     .about__content h1 {
         font-size: 20px;
+    }
+
+    .team__person {
+        grid-template-columns: 1fr;
     }
 }
