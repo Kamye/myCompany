@@ -19,6 +19,40 @@ body {
     width: 1124px;
     margin: 0 auto;
 }
+
+.section-name {
+    font-size: 44px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.section-name::after {
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: #fcac45;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 50px);
+}
+
+.section-column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+}
+
+.section-column-item {
+    padding: 20px 10px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+
 /* ----------------- HEADER ------------------ */
 
 header {
@@ -190,38 +224,8 @@ nav {
     background-size: cover;
 }
 .team__name {
-    font-size: 44px;
-    text-align: center;
-    font-weight: 600;
-    padding-bottom: 30px;
     margin-bottom: 105px;
-    position: relative;
 }
-
-.team__name::after {
-    content: '';
-    width: 100px;
-    height: 5px;
-    background-color: #fcac45;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 50px);
-}
-
-.team__person {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 35px;
-}
-
-.person__item {
-    padding: 20px 10px;
-    border-radius: 20px;
-    background: rgba(0, 0, 0, 0.6);
-    text-align: center;
-}
-
 .person__item_photo {
     width: 128px;
     height: 128px;
@@ -229,21 +233,74 @@ nav {
     margin-bottom: 22px;
     background: #494949;
 }
-
 .person__item_name{
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
 }
-
 .person__item_function {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 35px;
 }
-
 .person__item_about {
     font-size: 14px;
     line-height: 24px;
+}
 
+/*********************************************/
+/* ----------------- SERVICES ------------------ */
+/*********************************************/
+
+.services {
+    padding: 100px 0;
+    background-image: linear-gradient(to top, rgba(165, 165, 165, 0.541), rgba(165, 165, 165, 0.541)), url(../img/services-bg.jpg);
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+}
+
+.services__name {
+    margin-bottom: 55px;
+    color: #222222;
+}
+
+.services__description {
+    color: #6c6c6c;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    margin-bottom: 100px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.services__block {
+
+}
+
+.services__item {
+    color: #222222;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.services__item_photo {
+    margin: 0 auto;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 6px solid #fcac45;
+    margin-bottom: 30px;
+}
+
+.services__item_name {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.services__item_about {
+    font-size: 14px;
+    line-height: 21px;
 }

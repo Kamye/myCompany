@@ -101,7 +101,7 @@
         margin-bottom: 45px;
     }
 
-    .team__person {
+    .section-column {
         grid-template-columns: 1fr 1fr;
     }
     
@@ -126,7 +126,9 @@
 }
 
 @media (max-width: 576px) { 
-    
+    .section-column {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) { 
@@ -139,7 +141,5 @@
         font-size: 20px;
     }
 
-    .team__person {
-        grid-template-columns: 1fr;
-    }
+    
 }
